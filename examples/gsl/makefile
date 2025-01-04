@@ -6,7 +6,7 @@ clean:
 # Where your dynamic-module-enabled Emacs build lies.
 EMACS  = $(shell realpath `which emacs`)
 EMACS_BIN = $(shell dirname $(EMACS))
-EMACS_BUILDDIR ?= $(shell dirname $(EMACS_BIN))
+EMACS_BUILDDIR ?= $(shell dirname $(EMACS_BIN))/..
 
 ##############
 # GSL linalg #
